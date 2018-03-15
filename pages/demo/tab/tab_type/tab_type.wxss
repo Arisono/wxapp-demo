@@ -1,8 +1,10 @@
 /* pages/demo/tab/tab_type/tab_type.wxss */
-page{
-  height:100%
-  }
-.tab_container{
+
+page {
+  height: 100%;
+}
+
+.tab_container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -12,37 +14,37 @@ page{
   border: 1px solid greenyellow;
 }
 
-.nav-view-one{
-  display: flex;
-  flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   border: 1px solid gainsboro;
-}
-
-.nav-view-two{
+.nav-view-one {
   display: flex;
   flex-direction: row;
   align-items: center;
-      justify-content: center;
- border: 1px solid gainsboro;
-}
-
-.tab_content{
-width: 100%;
+  justify-content: center;
   border: 1px solid gainsboro;
+  margin: 1px;
 }
-.nav_one{
+
+.nav-view-two {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gainsboro;
+  margin: 1px;
+}
+
+.tab_content {
+  width: 100%;
+}
+
+.nav_one {
   padding: 10px;
- 
 }
 
-.nav_two{
+.nav_two {
   padding: 10px;
-
 }
 
-.icon-arrow:after{
+.icon-arrow:after {
   content: '';
   display: inline-block;
   align-items: center;

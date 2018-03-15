@@ -1,25 +1,25 @@
 <!--pages/demo/tab/tab_type/tab_type.wxml-->
 
 <view class='tab_container'>
-<view class='tab_header'>
-</view>
+  <view class='tab_header'>
+  </view>
 
-<view class='tab_content' class='tab_content'>
-<view class='nav-view-one'>
-<navigator url='../tab_one/tab_one' class='nav_one'> 选项卡实现方式一</navigator>
+  <view class='tab_content' class='tab_content'>
+    <view class='nav-view-one'>
+      <navigator url='../tab_one/tab_one' class='nav_one'> 选项卡实现方式一</navigator>
 
-<view class='icon-arrow'></view>
-</view>
+      <view class='icon-arrow'></view>
+    </view>
 
-<view class='nav-view-two'>
-<navigator url='../tab_two/tab_two'  class='nav_two'> 选项卡实现方式二</navigator>
-<view class='icon-arrow'></view>
-</view>
+    <view class='nav-view-two'>
+      <navigator url='../tab_two/tab_two' class='nav_two'> 选项卡实现方式二</navigator>
+      <view class='icon-arrow'></view>
+    </view>
 
 
 
-</view>
+  </view>
 
-<view class='bottom'>
-</view>
+  <view class='bottom'>
+  </view>
 </view>
