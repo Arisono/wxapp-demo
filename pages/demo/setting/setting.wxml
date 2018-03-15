@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='avatar flex'>
+    <image src='{{userInfo.avatarUrl}}'></image>
+    <text class='userinfo-nickname'>{{userInfo.nickName}}</text>
+  </view>
+
+  <view class='cells'>
+    <block wx:for="{{items}}" wx:key="{{item}}">
+      <view class="cell" style="background: transparent url('{{itemsLeftImage}}') no-repeat scroll 2% 58%;">
+        <view class="cell-bd">
+          <text class="desc">{{item.desc}}</text>
+         <text class="desc-text">{{item.desc}}</text>
+        </view>
+        <view class="cell-desc" bindtap="clickDetail" data-id="{{index}}" 
+        data-menus='{{itemsMenus[index].menus}}' >
+          <text class="desc-phone">{{itemsMenus[index].menus}}</text>
+        </view>
+        <view class="cell-ft"></view>
+      </view>
+    </block>
+
+  </view>
+
+</view>

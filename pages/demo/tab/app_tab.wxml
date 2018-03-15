@@ -1,0 +1,33 @@
+<!--pages/demo/tab/app_tab.wxml-->
+<!--选项卡  目测已经失败 -->
+<view class='stv-container'>
+  <scroll-view class='tab-bar' scroll-x='true'>
+    <view class='tab-row'>
+      <view wx:for="{{tabs}}" wx:key="unique" data-index='{{index}}' bindtap='handlerTabTap' class="tab {{activeTab==index?'tab-active':''}}" style='width: 100px'>
+      <view class='tabs-item'>
+          <text >{{item}}</text>
+      </view>
+    
+      </view>
+
+      <view style="width:80px; left: {{stv.offset/tabs.length}}px" class="under-line {{!stv.tStart? 'withAnimate': ''}}"></view>
+    </view>
+  </scroll-view>
+
+  <view class='scroll-view'>
+    <view bindtouchstart='handlerStart' catchtouchmove='handlerMove' bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="scroll-view-wrapper {{!stv.tStart? 'withAnimate': ''}}" style="left: -{{stv.offset}}px">
+
+      <view style="width: {{stv.windowWidth}}px;" wx:for="{{tabs}}" wx:key="unique" class="one-scene">
+        <scroll-view style="height:100%" scroll-y>
+          <!-- <view wx:for="{{tabs}}" wx:key="unique"> -->
+          <text>这是第{{index+1}}个页面</text>
+          <text>参数：{{item}}</text>
+          <!-- </view> -->
+        </scroll-view>
+      </view>
+    </view>
+
+  </view>
+
+
+</view>

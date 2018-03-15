@@ -1,0 +1,56 @@
+/* pages/demo/tab/tab_type/tab_type.wxss */
+page{
+  height:100%
+  }
+.tab_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid greenyellow;
+}
+
+.nav-view-one{
+  display: flex;
+  flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   border: 1px solid gainsboro;
+}
+
+.nav-view-two{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+      justify-content: center;
+ border: 1px solid gainsboro;
+}
+
+.tab_content{
+width: 100%;
+  border: 1px solid gainsboro;
+}
+.nav_one{
+  padding: 10px;
+ 
+}
+
+.nav_two{
+  padding: 10px;
+
+}
+
+.icon-arrow:after{
+  content: '';
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 6px;
+  height: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  transform: rotate(45deg);
+}
