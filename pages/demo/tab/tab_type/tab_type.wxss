@@ -1,58 +1,72 @@
-/* pages/demo/tab/tab_type/tab_type.wxss */
 
-page {
-  height: 100%;
-}
+      page {
+        height: 100%;
+      }
 
-.tab_container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid greenyellow;
-}
+      .tab_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 
-.nav-view-one {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid gainsboro;
-  margin: 1px;
-}
+      /* .nav-view-one {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gainsboro;
+        margin: 1px;
+      } */
 
-.nav-view-two {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid gainsboro;
-  margin: 1px;
-}
+      .nav-view-two {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gainsboro;
+        margin: 1px;
+      }
 
-.tab_content {
-  width: 100%;
-}
+      .tab_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 
-.nav_one {
-  padding: 10px;
-}
+      .nav_one {
+        padding: 10px;
+        width: 100%;
+        display: flex;
+      }
 
-.nav_two {
-  padding: 10px;
-}
+      /* .nav_two {
+        padding: 10px;
+        width: 100%;
+        position: relative;
+        display: flex;
+      } */
 
-.icon-arrow:after {
-  content: '';
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 6px;
-  height: 6px;
-  border-width: 2px 2px 0 0;
-  border-color: #c8c8cd;
-  border-style: solid;
-  transform: rotate(45deg);
-}
+      .nav_text {
+        flex: 1;
+      }
+
+      .icon-arrow:after {
+        content: '';
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 7px;
+        height: 7px;
+        margin-right: 6rpx;
+        border-width: 2px 2px 0 0;
+        border-color: #c8c8cd;
+        border-style: solid;
+        transform: rotate(45deg);
+      }

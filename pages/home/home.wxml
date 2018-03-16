@@ -1,0 +1,32 @@
+<!--pages/home/home.wxml-->
+<view class='home_container'>
+<view class='header'></view>
+<swiper    
+   class='binner'
+   vertical="{{vertical}}"
+   autoplay="{{autoplay}}"
+   interval="{{interval}}"
+   duration="{{duration}}"
+   indicator-dots="{{indicatorDots}}">
+    <block wx:for="{{topimg}}" wx:key="item">
+      <swiper-item>
+        <image src="{{item.image}}" class="slide-image"></image>
+      </swiper-item>
+    </block>
+</swiper>
+
+  <view class="services">
+      <view class="wraper">
+      <block wx:for="{{serverlist}}" wx:key="{{item}}" >
+
+       <view class="list" bindtap="gotoserver">
+          <image src="{{item.imageUrl}}"/>
+          <text class="desc">{{item.description}}</text>
+       </view>
+       
+      </block>
+     </view>
+  </view>
+
+<view class='footer'></view>
+</view>

@@ -1,21 +1,44 @@
-<!--pages/demo/tab/tab_type/tab_type.wxml-->
+<!--navigator标签自带点击按压背景变色效果  -->
 
 <view class='tab_container'>
   <view class='tab_header'>
   </view>
 
   <view class='tab_content' class='tab_content'>
-    <view class='nav-view-one'>
-      <navigator url='../tab_one/tab_one' class='nav_one'> 选项卡实现方式一</navigator>
-
-      <view class='icon-arrow'></view>
+    <view class='nav-view-two'>
+      <navigator url='../tab_one/tab_one' class='nav_one'>
+        <text class='nav_text'>选项卡实现方式一</text>
+        <view class='icon-arrow'></view>
+      </navigator>
     </view>
 
     <view class='nav-view-two'>
-      <navigator url='../tab_two/tab_two' class='nav_two'> 选项卡实现方式二</navigator>
-      <view class='icon-arrow'></view>
+      <navigator url='../tab_two/tab_two' class='nav_one'>
+        <text class='nav_text'>选项卡实现方式二</text>
+        <view class='icon-arrow'></view>
+      </navigator>
     </view>
 
+    <view class='nav-view-two'>
+      <navigator url='../tab_two/tab_two' class='nav_one'>
+        <text class='nav_text'>选项卡实现方式三</text>
+        <view class='icon-arrow'></view>
+      </navigator>
+    </view>
+
+    <view class='nav-view-two'>
+      <navigator url='../tab_two/tab_two' class='nav_one'>
+        <text class='nav_text'>选项卡实现方式四</text>
+        <view class='icon-arrow'></view>
+      </navigator>
+    </view>
+
+    <view class='nav-view-two'>
+      <navigator url='../tab_two/tab_two' class='nav_one'>
+        <text class='nav_text'>选项卡实现方式五</text>
+        <view class='icon-arrow'></view>
+      </navigator>
+    </view>
 
 
   </view>
