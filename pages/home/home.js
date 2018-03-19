@@ -10,10 +10,22 @@ Page({
     topimg: [],
     city: '',
     topimg: '',
-    serverlist: []
+    serverlist: [],
+    title: '',
+    desc: '',
+    clean: [],
+    image: '',
+    hot: '',
+    recomlist: []
   },
 
 
+  clickImage:function(event){
+    console.log(event.currentTarget.dataset.index);
+    console.log(event.currentTarget.dataset.url);
+
+  }
+,
   onLoad: function (options) {
       this.loadHomeData(0, 0);
   },
@@ -80,9 +92,9 @@ Page({
           topimg: res.data.topimg,
           serverlist: res.data.serverlist,
           title: res.data.title,
-          desc: res.data.desc
-          // image: res.data.image,
-          // clean: res.data.clean,
+          desc: res.data.desc,
+          image: res.data.image,
+          clean: res.data.clean
           // hot: res.data.hot,
           // recomlist: res.data.recomlist
         })
