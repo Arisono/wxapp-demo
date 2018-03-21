@@ -70,7 +70,7 @@ Page({
    */
   onLoad: function (options) {
   app.getUserInfo((data)=>{
-    console.log(JSON.stringify(data));
+    console.log("login:"+JSON.stringify(data));
     this.setData({
       userInfo:data
     })

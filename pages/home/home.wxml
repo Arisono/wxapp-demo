@@ -1,56 +1,50 @@
 <!--pages/home/home.wxml-->
 <view class='home_container'>
-<view class='header'></view>
-<swiper    
-   class='binner'
-   vertical="{{vertical}}"
-   autoplay="{{autoplay}}"
-   interval="{{interval}}"
-   duration="{{duration}}"
-   indicator-dots="{{indicatorDots}}" bindtap='clickBinner'>
+  <view class='header'></view>
+  <swiper class='binner' vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-dots="{{indicatorDots}}" bindtap='clickBinner'>
     <block wx:for="{{topimg}}" wx:key="item">
-      <swiper-item >
+      <swiper-item>
         <image src="{{item.image}}" class="slide-image" bindtap='clickImage' data-index='{{index}}' data-url='{{item.image}}'></image>
       </swiper-item>
     </block>
-</swiper>
+  </swiper>
 
   <view class="services">
-      <view class="wraper">
-      <block wx:for="{{serverlist}}" wx:key="{{item}}" >
+    <view class="wraper">
+      <block wx:for="{{serverlist}}" wx:key="{{item}}">
 
-       <view class="list" bindtap="gotoserver">
-          <image src="{{item.imageUrl}}"/>
+        <view class="list" bindtap="gotoserver">
+          <image src="{{item.imageUrl}}" />
           <text class="desc">{{item.description}}</text>
-       </view>
-       
+        </view>
+
       </block>
-     </view>
+    </view>
   </view>
 
   <view class='warp'>
-  <view class='cleanitem flex'>
-   <view class='left'>
-          <text class="title">{{title}}</text>
-           <text class="desc">{{desc}}</text>
-           <image src="{{image}}"/>
-   </view>
-   <view class='right'>
-         <block wx:for="{{clean}}" wx:key="{{item}}">
-           <view class="flex box">
-             <view class="flex-auto">
-               <text class="title">{{item.title}}</text>
-               <text class="desc">{{item.desc}}</text>
-             </view>
-             <image src="{{item.img}}"/>
-           </view>
-         </block>
-   </view>
-  
+    <view class='cleanitem flex'>
+      <view class='left'>
+        <text class="title">{{title}}</text>
+        <text class="desc">{{desc}}</text>
+        <image src="{{image}}" />
+      </view>
+      <view class='right'>
+        <block wx:for="{{clean}}" wx:key="{{item}}">
+          <view class="flex box">
+            <view class="flex-auto">
+              <text class="title">{{item.title}}</text>
+              <text class="desc">{{item.desc}}</text>
+            </view>
+            <image src="{{item.img}}" />
+          </view>
+        </block>
+      </view>
+
+    </view>
   </view>
-  </view>
 
 
 
-<view class='footer'></view>
+  <view class='footer'></view>
 </view>
