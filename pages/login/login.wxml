@@ -1,0 +1,32 @@
+        <view class='container_login'>
+
+          <view class='header'>
+            <image src='{{headerimg}}' class='header-img'></image>
+          </view>
+
+          <view class='content'>
+            <view class='input'>
+              <view class='account'>
+                <text>账号 </text>
+                <view class='line'></view>
+                <input></input>
+              </view>
+              <view class='password'>
+                <text>密码 </text>
+                <view class='line'></view>
+                <input password='true'></input>
+              </view>
+            </view>
+            <view class='commit'>
+              <button>登 录</button>
+            </view>
+          </view>
+
+          <view class='footer'>
+            <view class='userTip'>
+              <text>忘记密码</text>
+              <text>新用户注册</text>
+            </view>
+          </view>
+
+        </view>

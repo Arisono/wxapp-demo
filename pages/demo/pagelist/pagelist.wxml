@@ -1,0 +1,28 @@
+<!--pages/demo/pagelist/pagelist.wxml-->
+<view class='cantainer'>
+<view class='header'>
+
+</view>
+
+<view class='content'>
+    <view class='item-wrap'>
+            <view class='wrap-title'>
+             <text>1</text>
+             <text>Java/</text>
+             <text>tensorflow------------------------------------------</text>
+            </view>
+            <view class='wrap-desc'>
+            <text>Compulation</text>
+            </view>
+            <view class='wrap-info'>
+             <text>Java ·</text>
+             <text>12321321</text>
+             <text>stars</text>
+             <text> ·</text>
+             <text>Built by</text>
+             <image></image>
+            </view>
+    </view>
+</view>
+
+</view>

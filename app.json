@@ -1,6 +1,6 @@
 {
   "pages": [
-      "pages/home/home",
+    "pages/home/home",
     "pages/logs/logs",
     "pages/demo/request/request",
     "pages/demo/setting/setting",
@@ -8,7 +8,9 @@
     "pages/demo/tab/tab_type/tab_type",
     "pages/demo/tab/tab_one/tab_one",
     "pages/demo/tab/tab_two/tab_two",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/login/login",
+    "pages/demo/pagelist/pagelist"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -25,13 +27,13 @@
         "selectedIconPath": "images/icon7.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/login/login",
         "text": "网络",
         "iconPath": "images/icon3.png",
         "selectedIconPath": "images/icon7.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/demo/pagelist/pagelist",
         "text": "视图",
         "iconPath": "images/icon3.png",
         "selectedIconPath": "images/icon7.png"
