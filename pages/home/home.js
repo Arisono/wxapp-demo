@@ -1,6 +1,4 @@
 Page({
-
-
   data: {
     indicatorDots: true,
     vertical: false,
@@ -26,6 +24,10 @@ Page({
 
   }
 ,
+
+  gotoserver:function(event){
+
+  },
   onLoad: function (options) {
       this.loadHomeData(0, 0);
   },

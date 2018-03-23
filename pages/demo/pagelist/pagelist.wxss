@@ -1,33 +1,85 @@
-page{
+page {
   height: 100%;
 }
-.cantainer{
-   height: 100%;
-   background-color: #f8f8f8;
-   border: 1px solid lightgreen;
+
+.cantainer {
+  height: 100%;
+  background-color: #f8f8f8;
+  border: 1px solid lightgreen;
 }
 
-.content .item-wrap{
-   background-color: #fff;
-   border-bottom: 1px solid gainsboro;
- border: 1px solid lightgreen;
+.content .item-wrap {
+  background-color: #fff;
+  
+  border-bottom: 1px solid gainsboro;
 }
 
-.wrap-title{
- border: 1px solid lightgreen;
+.wrap-title {
+  display: flex;
+  height: 66rpx;
+  align-items: center;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
-.wrap-desc{
- border: 1px solid lightgreen;
+.wrap-desc {
+  padding-left: 31rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
-.wrap-info{
- border: 1px solid lightgreen;
+.wrap-info {
+  display: flex;
+  align-items: center;
+  padding-left: 31rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
-.wrap-info image{
- width: 20px;
- height: 20px;
- border: 1px solid gainsboro;
- border-radius: 50%;
+.wrap-title .index {
+  color: salmon;
+     font-weight:700;
+  text-align: center;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  border-radius: 50%;
+  border: 1px solid salmon;
+}
+
+.wrap-title .group {
+  color: #0d8ff2;
+    font-weight:600;
+}
+
+.wrap-title .name {
+  display: block;
+    font-weight:330;
+  font-size: 40rpx;
+  width: 50%;
+  color: #0d8ff2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrap-desc text {
+  display: block;
+  font-size: 30rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wrap-info image {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+}
+
+.wrap-info text {
+  font-size: 30rpx;
+  color: #999;
 }

@@ -5,21 +5,21 @@
 </view>
 
 <view class='content'>
-    <view class='item-wrap'>
+    <view class='item-wrap' hover-class="click-once-opaque">
             <view class='wrap-title'>
-             <text>1</text>
-             <text>Java/</text>
-             <text>tensorflow------------------------------------------</text>
+             <text class='index'>1</text>
+             <text class='group'>Java/</text>
+             <text class='name'>tensorflow-------------------------------------9090900909090909090-----</text>
             </view>
             <view class='wrap-desc'>
-            <text>Compulation</text>
+            <text>Compulation in an china get more service to designers</text>
             </view>
             <view class='wrap-info'>
-             <text>Java ·</text>
+             <text>Java · </text>
              <text>12321321</text>
              <text>stars</text>
-             <text> ·</text>
-             <text>Built by</text>
+             <text> · </text>
+             <text>Built by </text>
              <image></image>
             </view>
     </view>
