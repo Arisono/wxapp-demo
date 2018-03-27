@@ -1,28 +1,74 @@
 <!--pages/demo/pagelist/pagelist.wxml-->
 <view class='cantainer'>
-<view class='header'>
-
-</view>
-
-<view class='content'>
-    <view class='item-wrap' hover-class="click-once-opaque">
-            <view class='wrap-title'>
-             <text class='index'>1</text>
-             <text class='group'>Java/</text>
-             <text class='name'>tensorflow-------------------------------------9090900909090909090-----</text>
-            </view>
-            <view class='wrap-desc'>
-            <text>Compulation in an china get more service to designers</text>
-            </view>
-            <view class='wrap-info'>
-             <text>Java · </text>
-             <text>12321321</text>
-             <text>stars</text>
-             <text> · </text>
-             <text>Built by </text>
-             <image></image>
-            </view>
+  <view class='header'>
+    <!--搜索框  -->
+    <view class='search'>
+      <view class='input'>
+        <image></image>
+        <input placeholder='搜索' confirm-type='search' bindconfirm="searchRepositories"></input>
+      </view>
+      <view class='action' hover-class="click-once-opaque">
+        <text bindtap='showSelectPanle'>筛选</text>
+      </view>
     </view>
-</view>
+  </view>
+  <!--下拉菜单  -->
+  <view class='select'>
+    <view class='choice-bar'>
+      <view class='choice-item-langue' data-item="1" hover-class="click-once-opaque">
+        <view class='choice-item-label'>
+          <text class='label'>语言:</text>
+          <text class='value'>Java</text>
+        </view>
+
+        <view class='cell-ft'></view>
+      </view>
+      <view class='choice-item-date' data-item="2" hover-class="click-once-opaque">
+        <view class='choice-item-label'>
+          <text class='label'>时间:</text>
+          <text class='value'>2018-09-09</text>
+        </view>
+
+        <view class='cell-ft'></view>
+      </view>
+
+      <!--语言筛选  -->
+   
+      <view class='languge-list'>
+         <scroll-view scroll-y class='languge-scroll' class='scroll-district'>
+        <view wx:for="{{langugelist}}" class='languge-item'>
+          {{item.value}}
+        </view>
+             </scroll-view>
+      </view>
+  
+
+    </view>
+  </view>
+  <!--列表数据  -->
+  <view class='content'>
+    <block wx:for="{{items}}" wx:key="{{item}}">
+      <view class='item-wrap' hover-class="click-once-opaque">
+        <view class='wrap-title'>
+          <text class='index'>{{index}}</text>
+
+          <text class='name'>{{item.full_name}}</text>
+        </view>
+        <view class='wrap-desc'>
+          <text>{{item.description}}</text>
+        </view>
+        <view class='wrap-info'>
+          <text class='langue'>{{item.language}}</text>
+          <text class='mark'> · </text>
+          <text class='stars'>{{item.stargazers_count}}</text>
+          <text class='starslabel'>stars</text>
+          <text class='mark'> · </text>
+          <text class='tips'>Built by </text>
+          <image class='minicon' src='{{item.owner.avatar_url}}'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
 
 </view>

@@ -30,6 +30,7 @@ Page({
   },
   onLoad: function (options) {
       this.loadHomeData(0, 0);
+    
   },
 
   onReady: function () {

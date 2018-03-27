@@ -86,16 +86,4 @@
    color: #00beaf;
     border: 1px solid blueviolet; 
 }
-.cell-ft:after {
-  content: '';
 
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  width: 6px;
-  height: 6px;
-  border-width: 2px 2px 0 0;
-  border-color: #c8c8cd;
-  border-style: solid;
-  transform: rotate(45deg);
-}

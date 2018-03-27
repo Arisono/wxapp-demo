@@ -8,9 +8,111 @@ page {
   border: 1px solid lightgreen;
 }
 
+.select {
+  position: absolute;
+  width: 100%;
+  height: 580rpx;
+  background-color: white;
+  border: 1px solid gainsboro;
+}
+
+.choice-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid gainsboro;
+}
+
+.choice-item-langue {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  padding: 15rpx 20rpx 15rpx 15rpx;
+  border-right: 1px solid gainsboro;
+}
+
+.choice-item-date {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  padding: 15rpx 20rpx 15rpx 15rpx;
+}
+
+.choice-item-label {
+  flex: 1;
+  justify-content: center;
+}
+
+.choice-item-label .label {
+  font-size: 36rpx;
+}
+
+.choice-item-label .value {
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  color: gray;
+}
+.scroll-district{
+  height: 500rpx;
+}
+.languge-list{
+  top: 80rpx;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  position: absolute;
+}
+.languge-item{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 40rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f0eff3;
+  padding: 20rpx 0 20rpx 0;
+}
+
+.search .input {
+  display: flex;
+  height: 60rpx;
+  background-color: white;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  flex: 1;
+  border-radius: 16rpx;
+  border: 1px solid gainsboro;
+  align-items: center;
+}
+
+.action text {
+  color: #1dc341;
+  font-weight: 550;
+  font-size: 32rpx;
+  margin: 20rpx;
+}
+
+.search .input input {
+  display: inline-block;
+  flex: 1;
+}
+
+.search image {
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border: 1px solid gainsboro;
+  border-radius: 50%;
+}
+
 .content .item-wrap {
   background-color: #fff;
-  
   border-bottom: 1px solid gainsboro;
 }
 
@@ -38,7 +140,7 @@ page {
 
 .wrap-title .index {
   color: salmon;
-     font-weight:700;
+  font-weight: 700;
   text-align: center;
   width: 40rpx;
   height: 40rpx;
@@ -50,14 +152,14 @@ page {
 
 .wrap-title .group {
   color: #0d8ff2;
-    font-weight:600;
+  font-weight: 600;
 }
 
 .wrap-title .name {
   display: block;
-    font-weight:330;
+  font-weight: 330;
   font-size: 40rpx;
-  width: 50%;
+  width: 80%;
   color: #0d8ff2;
   overflow: hidden;
   white-space: nowrap;
@@ -82,4 +184,9 @@ page {
 .wrap-info text {
   font-size: 30rpx;
   color: #999;
+  margin-right: 10rpx;
+}
+
+.wrap-info .mark {
+  font-weight: 600;
 }
