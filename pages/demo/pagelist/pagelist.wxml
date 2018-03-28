@@ -11,40 +11,49 @@
         <text bindtap='showSelectPanle'>筛选</text>
       </view>
     </view>
-  </view>
-  <!--下拉菜单  -->
-  <view class='select'>
+
+    <view class='select'>
     <view class='choice-bar'>
-      <view class='choice-item-langue' data-item="1" hover-class="click-once-opaque">
+      <view class='choice-item-langue' data-item="1" hover-class="click-once-opaque"  bindtap="choiceItem">
         <view class='choice-item-label'>
           <text class='label'>语言:</text>
-          <text class='value'>Java</text>
+          <text class='value'>{{languge_value}}</text>
         </view>
 
         <view class='cell-ft'></view>
       </view>
-      <view class='choice-item-date' data-item="2" hover-class="click-once-opaque">
+      <view class='choice-item-date' data-item="2" hover-class="click-once-opaque" bindtap="choiceItem">
         <view class='choice-item-label'>
           <text class='label'>时间:</text>
-          <text class='value'>2018-09-09</text>
+          <text class='value'>{{date_value}}</text>
         </view>
 
         <view class='cell-ft'></view>
       </view>
 
-      <!--语言筛选  -->
-   
-      <view class='languge-list'>
+      
+      <view class="languge-list{{choice_languge?' choice-list-show':' choice-list-hide'}}">
          <scroll-view scroll-y class='languge-scroll' class='scroll-district'>
-        <view wx:for="{{langugelist}}" class='languge-item'>
+        <view bindtap='click_languges' wx:for="{{langugelist}}" class='languge-item' data-value='{{item.value}}'>
           {{item.value}}
         </view>
              </scroll-view>
       </view>
   
+   <view class="languge-list{{choice_date?' choice-list-show':' choice-list-hide'}}">
+         <scroll-view scroll-y class='languge-scroll' class='scroll-district'>
+        <view bindtap='click_times' wx:for="{{times}}" class='languge-item' data-value='{{item.value}}'s>
+          {{item.value}}
+        </view>
+             </scroll-view>
+      </view>
+
 
     </view>
   </view>
+  </view>
+  <!--下拉菜单  -->
+  <!--  -->
   <!--列表数据  -->
   <view class='content'>
     <block wx:for="{{items}}" wx:key="{{item}}">

@@ -1,0 +1,3 @@
+<!--pages/demo/web/web.wxml-->
+<text>pages/demo/web/web.wxml</text>
+<web-view src="https://github.com/kdn251/interviews"></web-view>

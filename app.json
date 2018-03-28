@@ -10,7 +10,8 @@
     "pages/demo/tab/tab_two/tab_two",
     "pages/index/index",
     "pages/login/login",
-    "pages/demo/pagelist/pagelist"
+    "pages/demo/pagelist/pagelist",
+    "pages/demo/web/web"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,7 +28,8 @@
         "selectedIconPath": "images/icon7.png"
       },
       {
-        "pagePath": "pages/login/login",
+   
+       "pagePath": "pages/demo/web/web",
         "text": "网络",
         "iconPath": "images/icon3.png",
         "selectedIconPath": "images/icon7.png"
